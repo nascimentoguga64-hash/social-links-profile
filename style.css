@@ -1,7 +1,7 @@
 :root{
-    --cor-verde: hsl(75, 94%, 57%);
+    --cor-green: hsl(75, 94%, 57%);
     --cor-White: hsl(0, 0%, 100%);
-    --cor-White-medium: hsl(0, 50%, 88%);
+    --cor-White-medium: hsl(0, 0%, 80%);
 
 --cor-Grey-700: hsl(0, 0%, 20%);
 --cor-Grey-800: hsl(0, 0%, 12%);
@@ -17,9 +17,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 
 body{
   font-family: "Inter", sans-serif;background-color: var(--cor-Grey-900);color:var(--cor-White);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a{
@@ -32,8 +40,9 @@ section {
     background-color: var(--cor-Grey-800);
     width: 330px;
     border-radius: 12px;
-    border: 1px solid red;
     text-align: center;
+    padding: 18px;
+
 }
 
 section img {
@@ -53,7 +62,7 @@ section h2 {
     font-size: 16px;
     margin-bottom: 24px;
     font-weight: 600;
-    color: var(--cor-verde);
+    color: var(--cor-green);
 }
 
 section p {
@@ -62,4 +71,16 @@ section p {
     margin-bottom: 24px;
 }
 
-li {}
+li {margin: 16px;}
+
+li a{background-color: var(--cor-Grey-700) ;
+padding: 12px;
+width: 100%;
+display: block;
+border-radius: 8px;
+font-weight: 600;}
+
+li a:hover{
+    color: var(--cor-Grey-900);
+    background-color: var(--cor-green);
+}
